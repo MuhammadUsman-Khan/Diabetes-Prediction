@@ -6,7 +6,7 @@
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 ![Colab](https://img.shields.io/badge/Run%20in-Colab-orange?logo=googlecolab)
 
-This is my **second machine learning project**, where I built a Support Vector Machine (SVM) model to predict whether a person has diabetes based on health metrics. This project demonstrates the end-to-end ML workflow from preprocessing to prediction using the **Pima Indians Diabetes dataset**.
+This is my **second machine learning project**, where I built a Support Vector Machine (SVM) model to predict whether a person has diabetes based on health metrics. This project demonstrates the end-to-end ML workflow from preprocessing to prediction using the **Diabetes Prediction dataset**.
 
 ---
 
