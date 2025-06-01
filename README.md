@@ -12,7 +12,7 @@ This is my **second machine learning project**, where I built a Support Vector M
 
 ## 📚 Dataset
 
-- **Name**: Pima Indians Diabetes Database  
+- **Name**: Diabetes Prediction Database  
 - **Source**: [Kaggle Dataset](https://www.kaggle.com/datasets/mathchi/diabetes-data-set)
 - **Samples**: 768  
 - **Features**: 8 medical features (e.g., Glucose, BMI, Age, etc.)
