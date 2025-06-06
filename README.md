@@ -1,83 +1,98 @@
-# 🩺 Diabetes Prediction Using Machine Learning
+# Diabetes Prediction ML Model 🩺🤖
 
-![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)
-![Machine Learning](https://img.shields.io/badge/Model-SVM-success)
-![License](https://img.shields.io/badge/License-MIT-green)
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
-![Colab](https://img.shields.io/badge/Run%20in-Colab-orange?logo=googlecolab)
+## Overview 📋
 
-This is my **second machine learning project**, where I built a Support Vector Machine (SVM) model to predict whether a person has diabetes based on health metrics. This project demonstrates the end-to-end ML workflow from preprocessing to prediction using the **Diabetes Prediction dataset**.
+This project implements a **Machine Learning model** to predict whether a person has diabetes based on diagnostic measurements. It leverages the **PIMA Diabetes dataset** with 768 samples and 8 key health features.
 
 ---
 
-## 📚 Dataset
+## Dataset Details 🗃️
 
-- **Name**: Diabetes Prediction Database  
-- **Source**: [Kaggle Dataset](https://www.kaggle.com/datasets/mathchi/diabetes-data-set)
-- **Samples**: 768  
-- **Features**: 8 medical features (e.g., Glucose, BMI, Age, etc.)
-- **Target**: `0` (Non-Diabetic), `1` (Diabetic)
+* Rows: 768
 
----
+* Columns: 9 (8 features + 1 outcome)
 
-## 🎯 Project Objective
+* Features include:
 
-To build a machine learning model that can **accurately classify** individuals as diabetic or non-diabetic using real-world health data.
+* Pregnancies
 
----
+* Glucose
 
-## 🛠️ Tools & Technologies
+* Blood Pressure
 
-- **Language**: Python  
-- **Libraries**:
-  - `pandas`, `numpy` – data manipulation
-  - `scikit-learn` – preprocessing, model training, evaluation
-    - `StandardScaler`, `train_test_split`, `SVM`, `accuracy_score`
+* Skin Thickness
 
----
+* Insulin
 
-## 🔄 Workflow
+* BMI
 
-1. **Importing Libraries**
-2. **Loading the Dataset**
-3. **Exploratory Data Analysis (EDA)**
-4. **Data Preprocessing**
-   - Feature Scaling using `StandardScaler`
-   - Train-Test Split
-5. **Model Training**
-   - Support Vector Machine (SVM) Classifier
-6. **Model Evaluation**
-   - Accuracy Score
-7. **Prediction System**
-   - Taking custom input and predicting diabetes status
+* Diabetes Pedigree Function
+
+* Age
+
+* Target: Outcome (0 = Non-Diabetic, 1 = Diabetic)
 
 ---
 
-## 📈 Model Performance
+## Data Exploration & Insights 🔍
 
-| Metric     | Value     |
-|------------|-----------|
-| Algorithm  | Support Vector Machine |
-| Accuracy   | _Add your score here_ |
-| Output     | Diabetic / Non-Diabetic |
+* The dataset shows an imbalance with 500 non-diabetic and 268 diabetic cases.
 
----
+* Diabetic patients tend to have higher average glucose, BMI, and age values.
 
-## 🖼️ Demo Screenshot
-
-![Prediction Screenshot]("C:\Users\TTS\Pictures\Screenshots\Screenshot-2025-05-30-183733.png")
+* Some features have zeroes which likely represent missing data and were standardized in preprocessing.
 
 ---
 
-## 🚀 How to Run the Project
+## Preprocessing Steps 🧹
 
-1. Clone this repo:
-   ```bash
-   git clone https://github.com/yourusername/diabetes-prediction-ml.git
-   cd diabetes-prediction-ml
-2. Install dependencies:
-   ```bash
-   pip install pandas numpy scikit-learn
+* Standardized all feature values using StandardScaler to normalize the range and improve model performance.
 
+* Split data into training (80%) and testing (20%) sets, maintaining the original class distribution (stratification).
 
+---
+
+## Model Development 🏗️
+
+* Trained a Support Vector Machine (SVM) classifier with a linear kernel on the training data.
+
+* Evaluated accuracy on both training and test datasets.
+
+---
+
+## Performance Metrics 📊
+
+*Training Accuracy: ~78.66%
+
+* Testing Accuracy: ~77.27%
+
+* These results demonstrate good generalization and reliable predictive capability.
+
+---
+
+## Predictive System Demo 💡
+
+* Provided a sample input to predict diabetes status.
+
+* The system standardizes the input data and outputs whether the individual is diabetic or not.
+
+---
+
+## Use Cases & Impact 🌟
+
+* Supports early detection of diabetes for better medical intervention.
+
+* Assists healthcare providers in risk assessment based on common medical measurements.
+
+* Can be extended to a user-friendly app or clinical tool.
+
+---
+
+## Future Enhancements 🚀
+
+* Handle missing data more robustly to improve model accuracy.
+
+* Experiment with ensemble models and hyperparameter tuning.
+
+* Deploy as a web service or integrate with wearable health devices for real-time monitoring.
 
