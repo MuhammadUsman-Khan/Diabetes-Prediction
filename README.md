@@ -62,7 +62,7 @@ This project implements a **Machine Learning model** to predict whether a person
 
 ## Performance Metrics 📊
 
-*Training Accuracy: ~78.66%
+* Training Accuracy: ~78.66%
 
 * Testing Accuracy: ~77.27%
 
